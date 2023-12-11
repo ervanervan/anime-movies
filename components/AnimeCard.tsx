@@ -20,7 +20,7 @@ interface Prop {
 function AnimeCard({ anime }: Prop) {
   return (
     <div className="max-w-sm rounded relative w-full">
-      <div className="relative w-full h-[37vh]">
+      <div className="relative w-full h-[50vh]">
         <Image
           src={anime.image.original}
           alt={anime.name}
