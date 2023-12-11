@@ -25,7 +25,7 @@ function AnimeCard({ anime }: Prop) {
           src={anime.image.original}
           alt={anime.name}
           fill
-          className="rounded-xl"
+          className="rounded-lg"
         />
       </div>
       <div className="py-4 flex flex-col gap-3">
