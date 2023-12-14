@@ -1,7 +1,9 @@
+import { useState } from "react";
 import LoadMore from "../components/LoadMore";
 import { fetchAnime } from "./action";
 
 async function Home() {
+  const [searchTerm, setSearchTerm] = useState("");
   const data = await fetchAnime(1);
 
   return (
@@ -25,6 +27,8 @@ async function Home() {
           </svg>
 
           <input
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             type="text"
             placeholder="search..."
             className="w-full md:w-60 py-2 px-1 focus:outline-none bg-gray-800"
