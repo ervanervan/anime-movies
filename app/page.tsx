@@ -26,7 +26,7 @@ async function Home() {
 
           <input
             type="text"
-            placeholder="search..."
+            placeholder="Search"
             className="w-full md:w-60 py-2 px-1 focus:outline-none bg-gray-800"
           />
         </div>
