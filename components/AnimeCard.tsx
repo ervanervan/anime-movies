@@ -37,7 +37,7 @@ function AnimeCard({ anime, index }: Prop) {
       viewport={{ amount: 0 }}
       className="sm:max-w-sm rounded relative w-full"
     >
-      <div className="relative h-[25rem] md:h-[22rem] w-full">
+      <div className="relative h-[12rem] md:h-[22rem] w-full">
         <Image
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
@@ -47,7 +47,7 @@ function AnimeCard({ anime, index }: Prop) {
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
-          <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
+          <h2 className="font-bold text-white text-base md:text-xl line-clamp-1 w-full">
             {anime.name}
           </h2>
           <div className="py-1 px-2 bg-[#161921] rounded-sm">
@@ -65,7 +65,7 @@ function AnimeCard({ anime, index }: Prop) {
               height={20}
               className="object-contain"
             />
-            <p className="text-base text-white font-bold">
+            <p className="text-sm md:text-base text-white font-bold">
               {anime.episodes || anime.episodes_aired}
             </p>
           </div>
@@ -77,7 +77,9 @@ function AnimeCard({ anime, index }: Prop) {
               height={18}
               className="object-contain"
             />
-            <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
+            <p className="text-sm md:text-base font-bold text-[#FFAD49]">
+              {anime.score}
+            </p>
           </div>
         </div>
       </div>

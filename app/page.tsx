@@ -32,7 +32,7 @@ async function Home() {
         </div>
       </div>
 
-      <section className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-10">
+      <section className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 md:gap-10">
         {data}
       </section>
       <LoadMore />
