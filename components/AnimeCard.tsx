@@ -35,7 +35,7 @@ function AnimeCard({ anime, index }: Prop) {
       animate="visible"
       transition={{ delay: index * 0.25, ease: "easeInOut", duration: 0.5 }}
       viewport={{ amount: 0 }}
-      className="max-w-sm rounded relative w-full"
+      className="sm:max-w-sm rounded relative w-full"
     >
       <div className="relative h-[25rem] md:h-[22rem] w-full">
         <Image

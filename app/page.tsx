@@ -6,7 +6,7 @@ async function Home() {
 
   return (
     <main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
-      <div className="flex flex-col md:flex-row gap-6 justify-between">
+      <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
         <h2 className="text-3xl text-white font-bold">Explore Anime</h2>
         <div className="flex items-center justify-start rounded-lg py-1 px-3 gap-2 bg-gray-800">
           <svg
