@@ -37,7 +37,7 @@ function LoadMore() {
             alt="spinner"
             width={56}
             height={56}
-            className="object-contain w-8 md:12 lg:w-14"
+            className="object-contain w-8 md:w-11 lg:w-14"
           />
         </div>
       </section>
